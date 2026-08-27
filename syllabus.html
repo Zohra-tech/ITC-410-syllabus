@@ -1,12 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ITC 410 | Syllabus</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- =========================================
+         FIRST BLOCK: SYLLABUS HEADER
+         ========================================= -->
 
     <header class="first-block">
 
@@ -27,14 +36,16 @@
 
                 <div class="info-item">
                     <span class="info-label">Instructor:</span>
-                    <span>Zohra Khwaja</span>
+                    <span>Nirmal Adhikari</span>
                 </div>
 
                 <div class="info-divider"></div>
 
                 <div class="info-item">
                     <span class="info-label">Email:</span>
-                    <span>your-email@gmail.com</span>
+                    <a href="mailto:nadhikari@auaf.edu.af">
+                        nadhikari@auaf.edu.af
+                    </a>
                 </div>
 
             </div>
@@ -43,6 +54,412 @@
 
     </header>
 
+
+    <!-- =========================================
+         SECOND BLOCK: COURSE CONTENT
+         ========================================= -->
+
+    <main class="second-block">
+
+        <div class="second-block-content">
+
+
+            <!-- =====================================
+                 LEFT COLUMN
+                 ===================================== -->
+
+            <div class="second-block-firstpart">
+
+
+                <!-- Course Overview -->
+
+                <section class="content-card">
+
+                    <h2>Course Overview</h2>
+
+                    <p>
+                        This course provides an introduction to web development
+                        and covers the fundamental concepts required to design
+                        and develop modern websites.
+                    </p>
+
+                </section>
+
+
+                <!-- Learning Objectives -->
+
+                <section class="content-card">
+
+                    <h2>Learning Objectives</h2>
+
+                    <ul>
+                        <li>
+                            Understand the fundamentals of HTML.
+                        </li>
+
+                        <li>
+                            Apply CSS to create professional web pages.
+                        </li>
+
+                        <li>
+                            Build responsive websites for different devices.
+                        </li>
+
+                        <li>
+                            Understand basic web accessibility principles.
+                        </li>
+
+                        <li>
+                            Use GitHub to manage web development projects.
+                        </li>
+                    </ul>
+
+                </section>
+
+
+                <!-- Course Schedule -->
+
+                <section class="content-card">
+
+                    <h2>Course Schedule</h2>
+
+                    <div class="schedule">
+
+                        <div class="schedule-item">
+                            <strong>Week 1</strong>
+                            <span>Introduction to Web Development</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 2</strong>
+                            <span>HTML Fundamentals</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 3</strong>
+                            <span>Semantic HTML</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 4</strong>
+                            <span>CSS Fundamentals</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 5</strong>
+                            <span>CSS Layout and Positioning</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 6</strong>
+                            <span>Flexbox and Grid</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 7</strong>
+                            <span>Responsive Web Design</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <strong>Week 8</strong>
+                            <span>Forms and User Input</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Assessment Criteria -->
+
+                <section class="content-card">
+
+                    <h2>Assessment Criteria</h2>
+
+                    <div class="assessment-item">
+                        <span>Homework &amp; Exercises</span>
+                        <strong>20%</strong>
+                    </div>
+
+                    <div class="assessment-item">
+                        <span>Quizzes</span>
+                        <strong>10%</strong>
+                    </div>
+
+                    <div class="assessment-item">
+                        <span>Assignments</span>
+                        <strong>25%</strong>
+                    </div>
+
+                    <div class="assessment-item">
+                        <span>Midterm Project</span>
+                        <strong>15%</strong>
+                    </div>
+
+                    <div class="assessment-item">
+                        <span>Final Project</span>
+                        <strong>30%</strong>
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- =====================================
+                 RIGHT COLUMN
+                 ===================================== -->
+
+            <div class="second-block-secondpart">
+
+
+                <!-- Percentage Calculator -->
+
+                <section class="content-card calculator-card">
+
+                    <h2>Percentage Calculator</h2>
+
+                    <p>
+                        Enter your scores below to calculate your current
+                        course percentage.
+                    </p>
+
+                    <div class="calculator">
+
+                        <div class="calculator-row">
+
+                            <label for="homework">
+                                Homework
+                            </label>
+
+                            <input
+                                type="number"
+                                id="homework"
+                                placeholder="0"
+                                min="0"
+                                max="100"
+                            >
+
+                        </div>
+
+
+                        <div class="calculator-row">
+
+                            <label for="quizzes">
+                                Quizzes
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quizzes"
+                                placeholder="0"
+                                min="0"
+                                max="100"
+                            >
+
+                        </div>
+
+
+                        <div class="calculator-row">
+
+                            <label for="assignments">
+                                Assignments
+                            </label>
+
+                            <input
+                                type="number"
+                                id="assignments"
+                                placeholder="0"
+                                min="0"
+                                max="100"
+                            >
+
+                        </div>
+
+
+                        <div class="calculator-row">
+
+                            <label for="midterm">
+                                Midterm Project
+                            </label>
+
+                            <input
+                                type="number"
+                                id="midterm"
+                                placeholder="0"
+                                min="0"
+                                max="100"
+                            >
+
+                        </div>
+
+
+                        <div class="calculator-row">
+
+                            <label for="final-project">
+                                Final Project
+                            </label>
+
+                            <input
+                                type="number"
+                                id="final-project"
+                                placeholder="0"
+                                min="0"
+                                max="100"
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            id="calculate-button"
+                        >
+                            Calculate Percentage
+                        </button>
+
+
+                        <div class="calculator-result">
+
+                            <span>Your Current Percentage</span>
+
+                            <strong id="result">
+                                0%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Required Tools -->
+
+                <section class="content-card">
+
+                    <h2>Required Tools</h2>
+
+                    <ul>
+
+                        <li>HTML5</li>
+
+                        <li>CSS3</li>
+
+                        <li>GitHub</li>
+
+                        <li>Visual Studio Code</li>
+
+                        <li>Modern Web Browser</li>
+
+                    </ul>
+
+                </section>
+
+
+                <!-- Course Policies -->
+
+                <section class="content-card">
+
+                    <h2>Course Policies</h2>
+
+
+                    <h3>Attendance</h3>
+
+                    <p>
+                        Students are expected to attend class regularly
+                        and participate in course activities.
+                    </p>
+
+
+                    <h3>Late Work</h3>
+
+                    <p>
+                        Assignments should be submitted by the specified
+                        deadline unless prior arrangements are made.
+                    </p>
+
+
+                    <h3>Academic Integrity</h3>
+
+                    <p>
+                        Students are expected to complete their work honestly
+                        and follow university academic integrity policies.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         THIRD BLOCK: CONTACT FOOTER
+         ========================================= -->
+
+    <footer class="third-block">
+
+        <div class="third-block-content">
+
+            <h2>CONTACT</h2>
+
+            <p>
+                Have questions about the course? Get in touch with the
+                instructor or join the course communication groups.
+            </p>
+
+
+            <div class="contact-links">
+
+
+                <!-- WhatsApp Group -->
+
+                <a
+                    href="https://chat.whatsapp.com/LN6svaCM0uE6dFVMtHk2za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp Group
+                </a>
+
+
+                <!-- Email -->
+
+                <a href="mailto:nadhikari@auaf.edu.af">
+                    Email
+                </a>
+
+
+                <!-- Google Space -->
+
+                <a
+                    href="https://chat.google.com/room/AAQAuN6OlKk?cls=7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Google Space
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                &copy; 2026 ITC 410 | Web Development
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript for the percentage calculator -->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
+```
