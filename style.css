@@ -14,8 +14,8 @@ body {
 .first-block {
     background: linear-gradient(
         135deg,
-        #bac9e1,
-        #0b2d63
+        #0b2d63,
+        #b6b8bd  
     );
 
     color: white;
@@ -32,18 +32,12 @@ body {
 
 .first-block-content{
     display: inline-block;
-
     color: #facc15;
-
     font-size: 1rem;
     font-weight: 700;
-
     letter-spacing: 2px;
-
     margin-bottom: 15px;
-
     border-bottom: 2px solid #facc15;
-
     padding-bottom: 6px;
 }
 
@@ -56,77 +50,56 @@ body {
 
 .first-block h2 {
     color: #93c5fd;
-
     font-size: 2rem;
     font-weight: 500;
-
     margin-top: -5px;
 }
 
 
 .course-description {
     max-width: 650px;
-
     margin: 20px auto;
-
-    font-size: 1.05rem;
-
+    font-size: 1.25rem;
     color: #e5e7eb;
 }
 
 .instructor-info {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     gap: 25px;
-
     margin-top: 30px;
 }
-
 
 .info-item {
     display: flex;
     gap: 8px;
-
     font-size: 1rem;
 }
-
 
 .info-label {
     font-weight: 700;
 }
 
-
 .info-divider {
     width: 1px;
     height: 25px;
-
     background-color: rgba(255, 255, 255, 0.4);
     color: lightblue;
 }
 
 .second-block {
     width: 100%;
-
     padding: 5% 0;
-
     background-color: #f4f7fb;
 }
 
-
 .second-block-content {
     width: 90%;
-
     margin: 0 auto;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: flex-start;
-
     gap: 4%;
 }
 
@@ -141,30 +114,20 @@ body {
 .second-block-firstpart-content,
 .second-block-secondpart-content {
     width: 100%;
-
     margin-bottom: 5%;
-
     padding: 5%;
-
     background-color: #ffffff;
-
     border-radius: 1%;
-
     box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
 }
 
 .second-block-firstpart-content h2,
 .second-block-secondpart-content h2 {
     margin-bottom: 4%;
-
     color: #0b2d63;
-
     font-size: 1.6vw;
-
     font-weight: 700;
-
     border-bottom: 2px solid #dbeafe;
-
     padding-bottom: 2%;
 }
 
@@ -172,18 +135,14 @@ body {
 .second-block-firstpart-content p,
 .second-block-secondpart-content p {
     color: #475569;
-
     font-size: 1vw;
-
     line-height: 1.7;
 }
 
 .second-block-firstpart-content ul,
 .second-block-secondpart-content ul {
     padding-left: 5%;
-
     color: #475569;
-
     font-size: 1vw;
 }
 
@@ -200,17 +159,11 @@ body {
 
 .schedule-item {
     width: 100%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 5%;
-
     padding: 3% 0;
-
     border-bottom: 1px solid #e2e8f0;
 }
 
@@ -222,32 +175,23 @@ body {
 
 .schedule-item strong {
     min-width: 15%;
-
     color: #0b2d63;
-
     font-size: 0.95vw;
 }
 
 
 .schedule-item span {
     width: 80%;
-
     color: #475569;
-
     font-size: 0.95vw;
 }
 
 .assessment-item {
     width: 100%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 3% 0;
-
     border-bottom: 1px solid #e2e8f0;
 }
 
@@ -259,93 +203,70 @@ body {
 
 .assessment-item span {
     color: #475569;
-
     font-size: 1vw;
 }
 
 
 .assessment-item strong {
     color: #0b2d63;
-
     font-size: 1vw;
 }
 
 .second-block-thirdpart-content h3 {
     margin-top: 5%;
-
     margin-bottom: 2%;
-
     color: #0b2d63;
-
     font-size: 1.05vw;
 }
 
 
 .second-block-thirdpart-content p {
     color: #475569;
-
     font-size: 1vw;
-
     line-height: 1.7;
 }
 
 .calculator-card {
     border-top: 4px solid #2563eb;
-
     background-color: #ffffff;
 }
 
 
 .calculator {
     width: 100%;
-
     margin-top: 5%;
 }
 
 .calculator-row {
     width: 100%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 5%;
-
     margin-bottom: 4%;
 }
 
 
 .calculator-row label {
     width: 55%;
-
     color: #334155;
-
     font-size: 1vw;
-
     font-weight: 600;
 }
 
 
 .calculator-row input {
     width: 45%;
-
     padding: 2.5%;
-
     border: 1px solid #cbd5e1;
-
     border-radius: 5px;
-
     font-size: 1vw;
-
     outline: none;
 }
 
 
 .calculator-row input:focus {
     border-color: #2563eb;
-
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
 }
 
@@ -379,102 +300,69 @@ body {
 }
 .calculator-result span {
     color: #334155;
-
     font-size: 1vw;
-
     font-weight: 600;
 }
 .calculator-result strong {
     color: #1d4ed8;
-
     font-size: 2vw;
-
     font-weight: 800;
 }
 
 .third-block {
     width: 100%;
-
     padding: 2.5% 0;
-
     background: linear-gradient(
         135deg,
         #061a3a 0%,
         #0b2d63 100%
     );
-
     color: #ffffff;
-
     text-align: center;
 }
 
 .third-block-content {
     width: 90%;
-
     margin: 0 auto;
 }
 
 .third-block-content h2 {
     margin-bottom: 1.5%;
-
     color: #ffffff;
-
     font-size: 2vw;
-
     font-weight: 700;
-
     letter-spacing: 0.1vw;
 }
 
 .third-block-content > p {
     width: 60%;
-
     margin: 0 auto;
-
     color: #cbd5e1;
-
     font-size: 1vw;
-
     line-height: 1.7;
 }
 
 .contact-links {
     width: 70%;
-
     margin: 3% auto;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 2%;
 }
 
 .contact-links a {
     width: 28%;
-
     padding: 2.5% 0;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     border: 1px solid rgba(255, 255, 255, 0.25);
-
     border-radius: 5px;
-
     background-color: rgba(255, 255, 255, 0.08);
-
     color: #ffffff;
-
     font-size: 1vw;
-
     font-weight: 600;
-
     transition:
         background-color 0.2s ease,
         border-color 0.2s ease,
@@ -483,8 +371,6 @@ body {
 
 .contact-links a:hover {
     background-color: rgba(255, 255, 255, 0.16);
-
     border-color: #93c5fd;
-
     transform: translateY(-2px);
 }
