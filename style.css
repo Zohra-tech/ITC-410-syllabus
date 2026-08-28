@@ -106,3 +106,375 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     color: lightblue;
 }
+/* =========================================
+   SECOND BLOCK — COURSE CONTENT
+   ========================================= */
+
+.second-block {
+    width: 100%;
+
+    padding: 5% 0;
+
+    background-color: #f4f7fb;
+}
+
+
+/* =========================================
+   MAIN TWO-COLUMN CONTAINER
+   ========================================= */
+
+.second-block-content {
+    width: 90%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 4%;
+}
+
+
+/* =========================================
+   LEFT COLUMN
+   ========================================= */
+
+.second-block-firstpart {
+    width: 48%;
+}
+
+
+/* =========================================
+   RIGHT COLUMN
+   ========================================= */
+
+.second-block-secondpart {
+    width: 48%;
+}
+
+
+/* =========================================
+   CONTENT CARDS
+   ========================================= */
+
+.second-block-firstpart-content,
+.second-block-secondpart-content {
+    width: 100%;
+
+    margin-bottom: 5%;
+
+    padding: 5%;
+
+    background-color: #ffffff;
+
+    border-radius: 1%;
+
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
+
+
+/* =========================================
+   CARD HEADINGS
+   ========================================= */
+
+.second-block-firstpart-content h2,
+.second-block-secondpart-content h2 {
+    margin-bottom: 4%;
+
+    color: #0b2d63;
+
+    font-size: 1.6vw;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid #dbeafe;
+
+    padding-bottom: 2%;
+}
+
+
+/* =========================================
+   CARD TEXT
+   ========================================= */
+
+.second-block-firstpart-content p,
+.second-block-secondpart-content p {
+    color: #475569;
+
+    font-size: 1vw;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+.second-block-firstpart-content ul,
+.second-block-secondpart-content ul {
+    padding-left: 5%;
+
+    color: #475569;
+
+    font-size: 1vw;
+}
+
+
+.second-block-firstpart-content li,
+.second-block-secondpart-content li {
+    margin-bottom: 2%;
+}
+
+
+/* =========================================
+   COURSE SCHEDULE
+   ========================================= */
+
+.schedule {
+    width: 100%;
+}
+
+
+.schedule-item {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 5%;
+
+    padding: 3% 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+
+.schedule-item strong {
+    min-width: 15%;
+
+    color: #0b2d63;
+
+    font-size: 0.95vw;
+}
+
+
+.schedule-item span {
+    width: 80%;
+
+    color: #475569;
+
+    font-size: 0.95vw;
+}
+
+
+/* =========================================
+   ASSESSMENT CRITERIA
+   ========================================= */
+
+.assessment-item {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 3% 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.assessment-item:last-child {
+    border-bottom: none;
+}
+
+
+.assessment-item span {
+    color: #475569;
+
+    font-size: 1vw;
+}
+
+
+.assessment-item strong {
+    color: #0b2d63;
+
+    font-size: 1vw;
+}
+
+
+/* =========================================
+   COURSE POLICIES
+   ========================================= */
+
+.second-block-thirdpart-content h3 {
+    margin-top: 5%;
+
+    margin-bottom: 2%;
+
+    color: #0b2d63;
+
+    font-size: 1.05vw;
+}
+
+
+.second-block-thirdpart-content p {
+    color: #475569;
+
+    font-size: 1vw;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PERCENTAGE CALCULATOR
+   ========================================= */
+
+.calculator-card {
+    border-top: 4px solid #2563eb;
+
+    background-color: #ffffff;
+}
+
+
+.calculator {
+    width: 100%;
+
+    margin-top: 5%;
+}
+
+
+/* ---------- Calculator Rows ---------- */
+
+.calculator-row {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 5%;
+
+    margin-bottom: 4%;
+}
+
+
+.calculator-row label {
+    width: 55%;
+
+    color: #334155;
+
+    font-size: 1vw;
+
+    font-weight: 600;
+}
+
+
+.calculator-row input {
+    width: 45%;
+
+    padding: 2.5%;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 5px;
+
+    font-size: 1vw;
+
+    outline: none;
+}
+
+
+.calculator-row input:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ---------- Calculator Button ---------- */
+
+#calculate-button {
+    width: 100%;
+
+    margin-top: 3%;
+
+    padding: 3%;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 1vw;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+#calculate-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ---------- Calculator Result ---------- */
+
+.calculator-result {
+    width: 100%;
+
+    margin-top: 5%;
+
+    padding: 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #eff6ff;
+
+    border-radius: 5px;
+}
+
+
+.calculator-result span {
+    color: #334155;
+
+    font-size: 1vw;
+
+    font-weight: 600;
+}
+
+
+.calculator-result strong {
+    color: #1d4ed8;
+
+    font-size: 2vw;
+
+    font-weight: 800;
+}
