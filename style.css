@@ -119,12 +119,17 @@ a {
     margin-bottom: 4%;
 }
 
-.course-overview {
+.course-overview, .required-tools {
     width: 100%;
     padding: 4%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
+
+.required-tools{
+    margin-top: 5%;
+
 }
 
 .course-overview h2 {
@@ -164,7 +169,7 @@ a {
     width: 100%;
     grid-column: 1;
     grid-row: 2;
-    margin-top: 5%;
+    margin-top: -15%;
     padding: 5%;
     background-color: #ffffff;
     border-radius: 10px;
@@ -173,6 +178,7 @@ a {
 
 .second-block-rightside-content {
     width: 100%;
+    justify-content: space-between;
     grid-column: 2;
     grid-row: 1;
     padding: 5%;
@@ -231,15 +237,13 @@ a {
     text-align: left;
 }
 
-.required-tools {
-    width: 100%;
-    grid-column: 2;
-    grid-row: 3;
-    margin-top: 5%;
-    padding: 5%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+.required-tools ul{
+    padding-left: 5%;
+    color: #475569;
+    font-size: 1vw;
+}
+.required-tools li{
+    margin-bottom: 2%;
 }
 
 .course-policies {
@@ -251,6 +255,12 @@ a {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
+
+.course-policies ul{
+    padding-left: 5%;
+    color: #475569;
+    font-size: 1vw;
 }
 
 .learning-objective h2,
@@ -361,15 +371,6 @@ a {
     font-size: 1vw;
 }
 
-.required-tools ul {
-    padding-left: 5%;
-    color: #475569;
-    font-size: 1vw;
-}
-
-.required-tools li {
-    margin-bottom: 2%;
-}
 
 .course-policies h3 {
     margin-top: 4%;
