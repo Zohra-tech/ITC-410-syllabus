@@ -1,17 +1,8 @@
-/* =========================================
-   RESET
-   ========================================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* =========================================
-   BODY
-   ========================================= */
 
 body {
     width: 100%;
@@ -29,22 +20,18 @@ a {
     width: 100%;
     background: linear-gradient(
         135deg,
-        #2d60b2,
+        #3173de,
         #e0e7f2
     );
 
     color: white;
-
     padding: 3% 5%;
-
     text-align: center;
 }
 
 .first-block-content {
     width: 90%;
-
     max-width: 900px;
-
     margin: 0 auto;
 }
 
@@ -121,527 +108,345 @@ a {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-
 .second-block {
     width: 100%;
     padding: 5%;
     background-color: #f4f7fb;
 }
 
-.course-overview {
+.second-block-content {
     width: 100%;
     margin-bottom: 4%;
+}
+
+.course-overview {
+    width: 100%;
     padding: 4%;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(13, 53, 117, 0.08);
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
 }
-
 
 .course-overview h2 {
     margin-bottom: 2%;
-
     padding-bottom: 1.5%;
-
     color: #0b2d63;
-
     font-size: 1.6vw;
-
-    font-weight: 700;
-
     border-bottom: 2px solid #dbeafe;
 }
-
 
 .course-overview p {
     color: #475569;
-
     font-size: 1vw;
-
-    line-height: 1.7;
 }
-
-
-/* =========================================
-   TWO COLUMN CONTENT
-   ========================================= */
-
-.second-block-content {
-    width: 100%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: flex-start;
-
-    gap: 4%;
-}
-
-
-/* =========================================
-   LEFT COLUMN
-   ========================================= */
-
-.second-block-firstpart {
-    width: 48%;
-}
-
-
-/* =========================================
-   RIGHT COLUMN
-   ========================================= */
 
 .second-block-secondpart {
-    width: 48%;
-
-    display: flex;
-
-    flex-direction: column;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 4%;
 }
 
-
-/* =========================================
-   GENERAL CARDS
-   ========================================= */
-
-.second-block-firstpart-content,
-.second-block-secondpart-content,
-.second-block-second-content,
-.second-block-thirdpart-content {
+.learning-objective {
     width: 100%;
-
-    margin-bottom: 5%;
-
+    grid-column: 1;
+    grid-row: 1;
     padding: 5%;
-
     background-color: #ffffff;
-
     border-radius: 10px;
-
     box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
 }
 
 
-/* =========================================
-   CARD HEADINGS
-   ========================================= */
+.course-schedule {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 5%;
+    padding: 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
 
-.second-block-firstpart-content h2,
-.second-block-secondpart-content h2,
-.second-block-second-content h2,
-.second-block-thirdpart-content h2 {
-    margin-bottom: 4%;
+.second-block-rightside-content {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
 
+.grade-scale {
+    width: 100%;
+    padding: 5%;
+    margin-top: 6%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
+
+.grade-scale h2 {
+    margin-bottom: 5%;
     padding-bottom: 2%;
-
     color: #0b2d63;
-
     font-size: 1.6vw;
-
     font-weight: 700;
-
     border-bottom: 2px solid #dbeafe;
 }
 
-
-/* =========================================
-   PARAGRAPHS
-   ========================================= */
-
-.second-block-firstpart-content p,
-.second-block-secondpart-content p,
-.second-block-second-content p,
-.second-block-thirdpart-content p {
-    color: #475569;
-
-    font-size: 1vw;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================
-   LISTS
-   ========================================= */
-
-.second-block-firstpart-content ul,
-.second-block-secondpart-content ul {
-    padding-left: 5%;
-
-    color: #475569;
-
-    font-size: 1vw;
-}
-
-
-.second-block-firstpart-content li,
-.second-block-secondpart-content li {
-    margin-bottom: 2%;
-}
-
-
-/* =========================================
-   COURSE SCHEDULE
-   ========================================= */
-
-.schedule {
-    width: 100%;
-}
-
-
-.schedule-item {
-    width: 100%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 5%;
-
-    padding: 3% 0;
-
-    border-bottom: 1px solid #e2e8f0;
-}
-
-
-.schedule-item:last-child {
-    border-bottom: none;
-}
-
-
-.schedule-item strong {
-    width: 20%;
-
-    color: #0b2d63;
-
-    font-size: 0.95vw;
-}
-
-
-.schedule-item span {
-    width: 75%;
-
-    color: #475569;
-
-    font-size: 0.95vw;
-}
-
-
-/* =========================================
-   ASSESSMENT CRITERIA
-   ========================================= */
-
-.assessment-item {
-    width: 100%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: 3% 0;
-
-    border-bottom: 1px solid #e2e8f0;
-}
-
-
-.assessment-item:last-child {
-    border-bottom: none;
-}
-
-
-.assessment-item span {
-    color: #475569;
-
-    font-size: 1vw;
-}
-
-
-.assessment-item strong {
-    color: #0b2d63;
-
-    font-size: 1vw;
-
-    font-weight: 700;
-}
-
-
-/* =========================================
-   GRADING SCALE
-   ========================================= */
-
-.second-block-second-content {
-    width: 100%;
-
-    padding: 5%;
-
-    background-color: #ffffff;
-
-    border-radius: 10px;
-
-    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
-}
-
-
-/* Grading heading */
-
-.second-block-second-content h2 {
-    margin-bottom: 4%;
-
-    padding-bottom: 2%;
-
-    color: #0b2d63;
-
-    font-size: 1.6vw;
-
-    font-weight: 700;
-
-    border-bottom: 2px solid #b9d0f2;
-}
-
-
-/* =========================================
-   GRADE ROW
-   ========================================= */
-
 .grade-item {
     width: 100%;
-
     display: flex;
-
-    justify-content: space-between;
-
     align-items: center;
-
-    gap: 5%;
-
-    padding: 2.5% 1%;
-
+    gap: 70%;
+    padding: 3% 0;
     border-bottom: 1px solid #e2e8f0;
 }
-
 
 .grade-item:last-child {
     border-bottom: none;
 }
 
-
-/* =========================================
-   GRADE LETTER
-   ========================================= */
-
 .grade-item span {
     width: 15%;
-
-    padding: 1% 0;
-
+    padding: 2% 0;
     border-radius: 5px;
-
+    background-color: #2563eb;
     color: #ffffff;
-
     font-size: 1vw;
-
     font-weight: 700;
-
     text-align: center;
-
-    background-color: #2563eb;
 }
-
-
-/* =========================================
-   GRADE COLORS
-   ========================================= */
-
-.grade-item:nth-child(2) span {
-    background-color: #16a34a;
-}
-
-
-.grade-item:nth-child(3) span {
-    background-color: #2563eb;
-}
-
-
-.grade-item:nth-child(4) span {
-    background-color: #f59e0b;
-}
-
-
-.grade-item:nth-child(5) span {
-    background-color: #f97316;
-}
-
-
-.grade-item:nth-child(6) span {
-    background-color: #dc2626;
-}
-
-
-/* =========================================
-   GRADE PERCENTAGE
-   ========================================= */
 
 .grade-item strong {
     width: 70%;
-
     color: #172554;
-
     font-size: 1vw;
-
-    font-weight: 600;
-
+    font-weight: 700;
     text-align: left;
 }
 
+.required-tools {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 5%;
+    padding: 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
 
-/* =========================================
-   COURSE POLICIES
-   ========================================= */
+.course-policies {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 4;
+    margin-top: 5%;
+    padding: 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(6, 26, 58, 0.08);
+}
 
-.second-block-thirdpart-content h3 {
-    margin-top: 4%;
+.learning-objective h2,
+.course-schedule h2,
+.assessment-criteria h2,
+.grade-scale h2,
+.required-tools h2,
+.course-policies h2 {
 
-    margin-bottom: 2%;
-
+    margin-bottom: 4%;
+    padding-bottom: 2%;
     color: #0b2d63;
+    font-size: 1.6vw;
+    font-weight: 700;
+    border-bottom: 2px solid #dbeafe;
+}
 
+.learning-objective ul {
+    padding-left: 5%;
+    color: #475569;
+    font-size: 1vw;
+}
+
+.learning-objective li {
+    margin-bottom: 3%;
+}
+
+.schedule {
+    width: 100%;
+}
+
+.schedule-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5% 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-item strong {
+    width: 20%;
+    color: #0b2d63;
+    font-size: 0.95vw;
+}
+
+.schedule-item span {
+    width: 75%;
+    color: #475569;
+    font-size: 0.95vw;
+}
+
+.assessment-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.assessment-item:last-child {
+    border-bottom: none;
+}
+
+.assessment-item span {
+    color: #475569;
+    font-size: 1vw;
+}
+
+.assessment-item strong {
+    color: #0b2d63;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.grade-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5% 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.grade-item:last-child {
+    border-bottom: none;
+}
+
+.grade-item span {
+    width: 15%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grade-item strong {
+    width: 70%;
+    color: #172554;
+    font-size: 1vw;
+}
+
+.required-tools ul {
+    padding-left: 5%;
+    color: #475569;
+    font-size: 1vw;
+}
+
+.required-tools li {
+    margin-bottom: 2%;
+}
+
+.course-policies h3 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    color: #0b2d63;
     font-size: 1.05vw;
 }
 
-
-.second-block-thirdpart-content p {
+.course-policies p {
     color: #475569;
-
     font-size: 1vw;
-
     line-height: 1.7;
 }
 
-
-/* =========================================
-   THIRD BLOCK — FOOTER
-   ========================================= */
-
 .third-block {
     width: 100%;
-
     padding: 2.5% 0;
-
     background: linear-gradient(
         135deg,
         #061a3a 0%,
         #0b2d63 100%
     );
-
     color: #ffffff;
-
     text-align: center;
 }
 
-
 .third-block-content {
     width: 80%;
-
     margin: 0 auto;
 }
-
-
-/* =========================================
-   FOOTER HEADING
-   ========================================= */
 
 .third-block-content h2 {
     margin-bottom: 1%;
-
     color: #ffffff;
-
     font-size: 1.8vw;
-
     font-weight: 700;
-
     letter-spacing: 0.1vw;
 }
 
-
-/* =========================================
-   FOOTER DESCRIPTION
-   ========================================= */
-
 .third-block-content > p {
     width: 60%;
-
     margin: 0 auto;
-
     color: #cbd5e1;
-
     font-size: 0.9vw;
-
     line-height: 1.5;
 }
 
-
-/* =========================================
-   CONTACT LINKS
-   ========================================= */
-
 .contact-links {
     width: 60%;
-
     margin: 2% auto;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 3%;
 }
 
 
 .contact-links a {
     width: 25%;
-
     padding: 1.5% 1%;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     border: 1px solid rgba(255, 255, 255, 0.25);
-
     border-radius: 5px;
-
     background-color: rgba(255, 255, 255, 0.08);
-
     color: #ffffff;
-
     font-size: 0.9vw;
-
     font-weight: 600;
-
     transition:
         background-color 0.2s ease,
         border-color 0.2s ease,
         transform 0.2s ease;
 }
 
-
-/* =========================================
-   CONTACT HOVER
-   ========================================= */
-
 .contact-links a:hover {
     background-color: rgba(255, 255, 255, 0.16);
-
     border-color: #93c5fd;
-
     transform: translateY(-2px);
 }
