@@ -14,32 +14,19 @@
    ========================================= */
 
 body {
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
     background-color: #f5f7fa;
-
     color: #172554;
-
     line-height: 1.6;
 }
-
-
-/* =========================================
-   LINKS
-   ========================================= */
 
 a {
     text-decoration: none;
 }
 
-
-/* =========================================
-   FIRST BLOCK — HEADER
-   ========================================= */
-
 .first-block {
     width: 100%;
-
     background: linear-gradient(
         135deg,
         #2d60b2,
@@ -53,7 +40,6 @@ a {
     text-align: center;
 }
 
-
 .first-block-content {
     width: 90%;
 
@@ -63,99 +49,64 @@ a {
 }
 
 
-/* Syllabus */
-
 .title {
     display: inline-block;
-
     color: #facc15;
-
-    font-size: 1rem;
-
+    font-size: 1vw;
     font-weight: 700;
-
-    letter-spacing: 2px;
-
+    letter-spacing: 0.2vw;
     margin-bottom: 1%;
-
     border-bottom: 2px solid #facc15;
-
-    padding-bottom: 4px;
+    padding-bottom: 0.4%;
 }
-
-
-/* ITC 410 */
 
 .first-block-content h1 {
-    font-size: 4rem;
-
+    font-size: 4.5vw;
     font-weight: 800;
-
-    letter-spacing: 1px;
+    letter-spacing: 0.1vw;
+    line-height: 1.1;
 }
-
-
-/* Web Development */
 
 .first-block-content h2 {
     color: #93c5fd;
-
-    font-size: 2rem;
-
+    font-size: 2vw;
     font-weight: 500;
-
-    margin-top: -5px;
+    margin-top: 0.5%;
 }
 
-
-/* Course description */
 
 .course-description {
     width: 70%;
-
     max-width: 650px;
-
     margin: 1.5% auto;
-
-    font-size: 1.05rem;
-
+    font-size: 1vw;
     color: #e5e7eb;
+    line-height: 1.6;
 }
-
-
-/* =========================================
-   INSTRUCTOR INFORMATION
-   ========================================= */
 
 .instructor-info {
+    width: 80%;
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
-    gap: 25px;
-
-    margin-top: 2%;
+    gap: 3%;
+    margin: 2% auto 0;
 }
-
 
 .info-item {
     display: flex;
-
-    gap: 8px;
-
-    font-size: 1rem;
+    align-items: center;
+    gap: 0.5vw;
+    font-size: 0.9vw;
 }
-
 
 .info-label {
     font-weight: 700;
 }
 
-
 .info-item a {
     color: #ffffff;
+    transition: color 0.2s ease;
 }
 
 
@@ -166,30 +117,57 @@ a {
 
 .info-divider {
     width: 1px;
-
-    height: 25px;
-
+    height: 1.5vw;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
 
-/* =========================================
-   SECOND BLOCK
-   ========================================= */
-
 .second-block {
     width: 100%;
-
-    padding: 5% 0;
-
+    padding: 5%;
     background-color: #f4f7fb;
 }
 
+.course-overview {
+    width: 100%;
+    margin-bottom: 4%;
+    padding: 4%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(13, 53, 117, 0.08);
+}
+
+
+.course-overview h2 {
+    margin-bottom: 2%;
+
+    padding-bottom: 1.5%;
+
+    color: #0b2d63;
+
+    font-size: 1.6vw;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid #dbeafe;
+}
+
+
+.course-overview p {
+    color: #475569;
+
+    font-size: 1vw;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TWO COLUMN CONTENT
+   ========================================= */
 
 .second-block-content {
-    width: 90%;
-
-    margin: 0 auto;
+    width: 100%;
 
     display: flex;
 
@@ -202,7 +180,7 @@ a {
 
 
 /* =========================================
-   LEFT AND RIGHT COLUMNS
+   LEFT COLUMN
    ========================================= */
 
 .second-block-firstpart {
@@ -210,19 +188,21 @@ a {
 }
 
 
+/* =========================================
+   RIGHT COLUMN
+   ========================================= */
+
 .second-block-secondpart {
     width: 48%;
 
     display: flex;
 
     flex-direction: column;
-
-    gap: 4%;
 }
 
 
 /* =========================================
-   GENERAL CONTENT CARDS
+   GENERAL CARDS
    ========================================= */
 
 .second-block-firstpart-content,
@@ -253,6 +233,8 @@ a {
 .second-block-thirdpart-content h2 {
     margin-bottom: 4%;
 
+    padding-bottom: 2%;
+
     color: #0b2d63;
 
     font-size: 1.6vw;
@@ -260,8 +242,6 @@ a {
     font-weight: 700;
 
     border-bottom: 2px solid #dbeafe;
-
-    padding-bottom: 2%;
 }
 
 
@@ -333,7 +313,7 @@ a {
 
 
 .schedule-item strong {
-    min-width: 15%;
+    width: 20%;
 
     color: #0b2d63;
 
@@ -342,7 +322,7 @@ a {
 
 
 .schedule-item span {
-    width: 80%;
+    width: 75%;
 
     color: #475569;
 
@@ -385,6 +365,8 @@ a {
     color: #0b2d63;
 
     font-size: 1vw;
+
+    font-weight: 700;
 }
 
 
@@ -394,8 +376,6 @@ a {
 
 .second-block-second-content {
     width: 100%;
-
-    margin-bottom: 5%;
 
     padding: 5%;
 
@@ -424,7 +404,9 @@ a {
 }
 
 
-/* Grade rows */
+/* =========================================
+   GRADE ROW
+   ========================================= */
 
 .grade-item {
     width: 100%;
@@ -448,7 +430,9 @@ a {
 }
 
 
-/* Grade letter */
+/* =========================================
+   GRADE LETTER
+   ========================================= */
 
 .grade-item span {
     width: 15%;
@@ -469,22 +453,9 @@ a {
 }
 
 
-/* Grade percentage */
-
-.grade-item strong {
-    width: 70%;
-
-    color: #172554;
-
-    font-size: 1vw;
-
-    font-weight: 600;
-
-    text-align: left;
-}
-
-
-/* Individual grade colors */
+/* =========================================
+   GRADE COLORS
+   ========================================= */
 
 .grade-item:nth-child(2) span {
     background-color: #16a34a;
@@ -512,20 +483,19 @@ a {
 
 
 /* =========================================
-   REQUIRED TOOLS
+   GRADE PERCENTAGE
    ========================================= */
 
-.second-block-secondpart-content ul {
-    padding-left: 5%;
+.grade-item strong {
+    width: 70%;
 
-    color: #475569;
+    color: #172554;
 
     font-size: 1vw;
-}
 
+    font-weight: 600;
 
-.second-block-secondpart-content li {
-    margin-bottom: 2%;
+    text-align: left;
 }
 
 
@@ -554,7 +524,7 @@ a {
 
 
 /* =========================================
-   THIRD BLOCK — CONTACT FOOTER
+   THIRD BLOCK — FOOTER
    ========================================= */
 
 .third-block {
@@ -581,6 +551,10 @@ a {
 }
 
 
+/* =========================================
+   FOOTER HEADING
+   ========================================= */
+
 .third-block-content h2 {
     margin-bottom: 1%;
 
@@ -593,6 +567,10 @@ a {
     letter-spacing: 0.1vw;
 }
 
+
+/* =========================================
+   FOOTER DESCRIPTION
+   ========================================= */
 
 .third-block-content > p {
     width: 60%;
@@ -655,6 +633,10 @@ a {
         transform 0.2s ease;
 }
 
+
+/* =========================================
+   CONTACT HOVER
+   ========================================= */
 
 .contact-links a:hover {
     background-color: rgba(255, 255, 255, 0.16);
